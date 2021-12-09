@@ -1,0 +1,41 @@
+html {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+}
+div > div {
+  background-color: pink;
+  border: 1px solid red;
+}
+
+.grid {
+  display: grid;
+  gap: 8px;
+  grid-template-rows: 100% 100% 100% 100% 100% 100% 100%;
+  grid-template-areas:
+    'title title title nav nav nav nav'
+    'mainContentsImg mainContentsImg mainContentsImg mainContentsImg sideBar sideBar sideBar'
+    'mainContentsImg mainContentsImg mainContentsImg mainContentsImg sideBar sideBar sideBar'
+    'mainContents mainContents mainContents mainContents sideBar sideBar sideBar'
+    'mainContents mainContents mainContents mainContents sideBar sideBar sideBar'
+    'mainContents mainContents mainContents mainContents sideBar sideBar sideBar'
+    'footer footer footer footer footer footer footer';
+}
+.title {
+  grid-area: title;
+}
+.nav {
+  grid-area: nav;
+}
+.mainContentsImg {
+  grid-area: mainContentsImg;
+}
+.mainContents {
+  grid-area: mainContents;
+}
+.sideBar {
+  grid-area: sideBar;
+}
+.footer {
+  grid-area: footer;
+}

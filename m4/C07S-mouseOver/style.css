@@ -1,0 +1,28 @@
+body {
+  display: flex;
+}
+img {
+  width: 100px;
+}
+div {
+  position: relative;
+  width: fit-content;
+}
+div::before {
+  font-size: 30px;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+}
+div:hover::before {
+  opacity: 1;
+}
+div:nth-of-type(1)::before {
+  content: 'A';
+}
+div:nth-of-type(2)::before {
+  content: 'B';
+}
+div:nth-of-type(3)::before {
+  content: 'C';
+}

@@ -1,0 +1,28 @@
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+div {
+  width: 0;
+  height: 0;
+  animation: triangle 2s ease infinite;
+}
+@keyframes triangle {
+  0% {
+    border-style: solid;
+    border-width: 0 125px 216.5px 125px;
+    border-color: transparent transparent red transparent;
+  }
+  50% {
+    border-style: solid;
+    border-color: yellow;
+    border-width: 216.5px;
+  }
+  100% {
+    border-style: solid;
+    border-width: 0 125px 216.5px 125px;
+    border-color: transparent transparent red transparent;
+  }
+}

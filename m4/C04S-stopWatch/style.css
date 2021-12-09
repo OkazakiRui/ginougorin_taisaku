@@ -1,0 +1,17 @@
+.watch {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  border-radius: 100%;
+  overflow: hidden;
+  background-color: pink;
+}
+.second {
+  height: 200px;
+  width: 2px;
+  position: absolute;
+  top: 0;
+  left: 199px;
+  background-color: black;
+  transform-origin: bottom;
+}

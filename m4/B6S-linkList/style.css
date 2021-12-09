@@ -1,6 +1,14 @@
+/* 含む要素 */
 a[href*='web'] {
   color: red;
 }
 a[href*='design'] {
   color: green;
 }
+/* 開始する要素 */
+/* a[href^='web'] {
+  color: red;
+}
+a[href^='design'] {
+  color: green;
+} */

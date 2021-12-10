@@ -1,0 +1,9 @@
+p:nth-of-type(1)::first-letter {
+  background-color: #ff0000;
+}
+p:nth-of-type(2)::first-letter {
+  background-color: #00ff00;
+}
+p:nth-of-type(3)::first-letter {
+  background-color: #0000ff;
+}

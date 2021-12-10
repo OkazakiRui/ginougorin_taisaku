@@ -1,28 +1,22 @@
 body {
   height: 100vh;
+  background-color: #f3f3f3;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-div {
-  width: 0;
-  height: 0;
-  animation: triangle 2s ease infinite;
+.triangle {
+  animation: ani 2s infinite;
 }
-@keyframes triangle {
-  0% {
-    border-style: solid;
-    border-width: 0 125px 216.5px 125px;
-    border-color: transparent transparent red transparent;
+@keyframes ani {
+  0%,
+  100% {
+    border-left: transparent calc(100px / 2) solid;
+    border-right: transparent calc(100px / 2) solid;
+    border-top: transparent 0 solid;
+    border-bottom: red calc(100px * 0.866) solid;
   }
   50% {
-    border-style: solid;
-    border-color: yellow;
-    border-width: 216.5px;
-  }
-  100% {
-    border-style: solid;
-    border-width: 0 125px 216.5px 125px;
-    border-color: transparent transparent red transparent;
+    border: yellow 220px solid;
   }
 }

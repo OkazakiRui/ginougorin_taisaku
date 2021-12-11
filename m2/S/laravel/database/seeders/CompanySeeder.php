@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use App\Models\company;
 
 class CompanySeeder extends Seeder
 {
@@ -13,6 +14,6 @@ class CompanySeeder extends Seeder
      */
     public function run()
     {
-        //
+        company::factory()->count(20)->create();
     }
 }

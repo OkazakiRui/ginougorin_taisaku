@@ -47,7 +47,7 @@ class CompanyController extends Controller
      */
     public function show(company $company)
     {
-        //
+        return $company;
     }
 
     /**

@@ -12,7 +12,7 @@ class LoginController extends Controller
         $username = $request->username;
         $password = $request->password;
 
-        return User::where("name", $username)->where("password", hash("md5", $password))->get()[0]->token;
-        
+        $data = User::where("name", $username)->where("password", hash("md5", $password))->get();
+        return count($data) == 1 ? $data[0]->token : "ユーザーまたはパスワードが正しくありません";
     }
 }

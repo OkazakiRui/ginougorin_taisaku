@@ -27,3 +27,18 @@ window.addEventListener("load", () => {
         });
     });
 });
+
+const submit = () => {
+    const inputs = document.querySelectorAll("input");
+    const data = {
+        username: inputs[0],
+        password: inputs[1],
+    };
+    const param = {
+        method: "post",
+        body: JSON.stringify(data),
+    };
+    fetch("/api/login", param)
+        .then((res) => res.json())
+        .then((data) => console.log(data));
+};

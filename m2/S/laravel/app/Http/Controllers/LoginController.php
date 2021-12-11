@@ -9,10 +9,10 @@ class LoginController extends Controller
 {
     public function login(Request $request)
     {
-        $userName = $request->username;
+        $username = $request->username;
         $password = $request->password;
 
-        return User::where("name", $userName)->where("password", hash("md5", $password))->get()[0]->token;
+        return User::where("name", $username)->where("password", hash("md5", $password))->get()[0]->token;
         
     }
 }

@@ -15,6 +15,12 @@
         location.href = `/edit/${id}`;
     }
 </script>
+<script>
+    const logout = () => {
+        localStorage.clear()
+        location.href = "/login";
+    };
+</script>
 <style>
     header > a, header > button, th, td {
         border: 1px solid black;
@@ -27,7 +33,7 @@
         <a href="/">出展企業一覧</a>
         <a href="/newCompany">出展企業登録</a>
         <a href="/login">ログイン</a>
-        <button onclick="logout">ログアウト</button>
+        <button onclick="logout()">ログアウト</button>
     </header>
     <table id="table">
         <tr>

@@ -11,12 +11,12 @@ body {
 @keyframes ani {
   0%,
   100% {
-    border-left: transparent calc(100px / 2) solid;
-    border-right: transparent calc(100px / 2) solid;
+    border-left: transparent 100px solid;
+    border-right: transparent 100px solid;
     border-top: transparent 0 solid;
-    border-bottom: red calc(100px * 0.866) solid;
+    border-bottom: red calc(100px * 1.73) solid;
   }
   50% {
-    border: yellow 220px solid;
+    border: yellow calc(100px * 1.73 / 2) solid;
   }
 }

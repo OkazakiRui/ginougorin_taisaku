@@ -20,8 +20,12 @@
     password : 
     <input type="password" name="password" value="gorin">
   </p>
+  <p id="err"></p>
   <button onclick="submit()">ログイン</button>
   <script>
+    document.getElementById("err").textContent = localStorage.getItem("token");
+  </script>
+  <script>    
     function submit() {
       const inputs = document.querySelectorAll("input");
       const data = {

@@ -59,7 +59,7 @@ class CompanyController extends Controller
      */
     public function edit(company $company)
     {
-        //
+        // 
     }
 
     /**
@@ -71,7 +71,8 @@ class CompanyController extends Controller
      */
     public function update(UpdatecompanyRequest $request, company $company)
     {
-        //
+        $company->update($request->all());
+        return $company;
     }
 
     /**

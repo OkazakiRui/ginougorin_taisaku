@@ -22,3 +22,6 @@ Route::get('/login', function () {
 Route::get('/newCompany', function () {
     return view('newCompany');
 });
+Route::get('/edit/{id}', function ($id) {
+    return view('companyEdit', compact("id"));
+});

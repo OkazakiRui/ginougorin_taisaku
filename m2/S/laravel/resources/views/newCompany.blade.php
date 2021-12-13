@@ -71,7 +71,10 @@
             };
             fetch("/api/company", param)
                 .then(res => res.json())
-                .then(data => location.href = "/");
+                .then(data => {
+                    window.alert("企業情報が登録されました");
+                    location.href = "/";
+                });
         }
     </script>
 </body>

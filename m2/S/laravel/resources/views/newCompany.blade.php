@@ -40,7 +40,7 @@
     </p>
     <p>
         電話番号 : 
-        <input type="number">
+        <input type="text">
     </p>
     <p>
         電子メール : 

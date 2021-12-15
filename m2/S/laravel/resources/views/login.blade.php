@@ -47,5 +47,9 @@
           });
     };
   </script>
+  <script>
+    // window popstate で画面遷移先で reload される
+    window.addEventListener("popstate", () => {});
+  </script>
 </body>
 </html>

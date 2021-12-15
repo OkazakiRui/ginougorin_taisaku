@@ -16,7 +16,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* box-shadow: ; */
+  position: fixed;
+  top: 0;
+  background-color: #fff;
 }
 ul {
   display: flex;

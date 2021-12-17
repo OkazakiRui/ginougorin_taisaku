@@ -1,0 +1,22 @@
+header {
+  height: 100px;
+  margin-inline: 24px;
+  display: flex;
+  justify-content: space-between;
+  h1 {
+    font-size: 40px;
+    line-height: 100px;
+  }
+  ul {
+    display: flex;
+    gap: 24px;
+    height: 100%;
+  }
+  li {
+    height: 100%;
+  }
+  button {
+    width: 160px;
+    height: 100%;
+  }
+}

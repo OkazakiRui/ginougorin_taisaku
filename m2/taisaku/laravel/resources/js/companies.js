@@ -5,6 +5,8 @@ function toEdit(id) {
     location.href = `/edit/${id}`;
 }
 
+window.addEventListener("popstate");
+
 window.addEventListener("load", () => {
     document.getElementById("table").innerHTML =
         "<tr><th>企業名</th><th>住所</th><th>電話番号</th><th>電子メール</th><th>備考 </th><th></th></tr>";

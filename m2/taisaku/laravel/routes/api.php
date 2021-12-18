@@ -5,6 +5,9 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CompanyController;
 use App\Http\Controllers\LoginController;
 
+use App\Http\Controllers\GradeController;
+use App\Http\Controllers\EquipmentController;
+
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -16,10 +19,9 @@ use App\Http\Controllers\LoginController;
 |
 */
 
+Route::apiResource("grade", GradeController::class);
 Route::post("/login", [LoginController::class, "login"]);
-
 Route::apiResource("company", CompanyController::class);
-
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
